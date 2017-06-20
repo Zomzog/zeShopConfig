@@ -1,0 +1,27 @@
+server:
+    port: 9191
+
+logging:
+    level:
+        org.springframework.security: DEBUG
+ 
+# security.user.name=user
+# security.user.password: password
+security:
+    sessions: if_required
+#security.oauth2.client.clientId: acme
+#security.oauth2.client.clientSecret: acmesecret
+#security.oauth2.client.authorized-grant-types: authorization_code,refresh_token,password
+#security.oauth2.client.scope: openid
+spring:
+    mail:
+      host: smtp.mailtrap.io
+      port: 2525
+      username: 73efcbf2fdf8f7
+      password: 2b613b2738e97d
+      
+
+auth:
+  mail:
+    from: test@pony.test
+    baseUrl: http://localhost
