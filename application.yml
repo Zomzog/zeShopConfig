@@ -1,0 +1,33 @@
+
+eureka:
+  instance:
+    hostname: discovery
+
+endpoints:
+  jmx:
+    enabled: false
+  shutdown:
+    enabled: true
+spring:
+  jmx:
+    enabled: false
+  sleuth:
+    sampler:
+      percentage: 1.0
+    log:
+      json:
+        enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+management:
+  security:
+    enabled: false
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
+
