@@ -2,7 +2,10 @@
 eureka:
   instance:
     hostname: discovery
-
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+    
 endpoints:
   jmx:
     enabled: false
