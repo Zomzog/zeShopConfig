@@ -1,7 +1,3 @@
-logging:
-    level:
-        org.springframework.security: DEBUG
-
 security:
     sessions: if_required
     
