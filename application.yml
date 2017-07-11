@@ -44,9 +44,9 @@ management:
 
 logging:
   level:
+    ROOT: DEBUG
     bzh.zomzog.zeshop: DEBUG
-    org.springframework.cloud.config.server: INFO
-    org.springframework.security: DEBUG
+    
     javax.activation: WARN
     javax.mail: WARN
     javax.xml.bind: WARN
@@ -65,8 +65,9 @@ logging:
     org.hibernate: WARN
     org.hibernate.ejb.HibernatePersistence: OFF
     org.springframework: WARN
-    org.springframework.web: WARN
+    org.springframework.cloud.config.server: INFO
     org.springframework.security: WARN
+    org.springframework.web: WARN
     org.springframework.cache: WARN
     org.thymeleaf: WARN
     org.xnio: WARN
